@@ -102,22 +102,25 @@ main p {
 
 main a {
     color: rgb(247, 219, 253);
+    list-style: none;
     text-decoration: none;
+    width: auto;
 }
 
 main a:hover, a:visited {
     color: blueviolet;
+    text-decoration: none;
 }
 
 main a:active {
     color: rgb(226, 43, 186);
+    text-decoration: none;
 }
 
 
 
 
 .relax {
-    margin: 50px 150px;
     padding: 10px;
     text-align: center;
 }
