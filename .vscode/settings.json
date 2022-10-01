@@ -1,3 +1,5 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "livePreview.defaultPreviewPath": "c:\\Users\\jadso\\Desktop\\FRONT-END UDEMY\\Site_1\\Meus-Projetos\\projetos.html",
+    "liveServer.settings.port": 5501
 }

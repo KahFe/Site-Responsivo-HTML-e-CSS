@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    background-image: url(../Universe.jpg);
+}
+
+.hero {
+    background-image: url(../Lofi-Girl.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 1px solid #181A47; /* border-top adicionada para consertar o alinhamento da "margin" do .hero nav ul */
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.hero-content h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px rgb(240, 153, 201);
+}
+
+.hero-content h2{
+    background-color: rgba(0,0,0, .6); /* Na transparência coloquei .6 pois quando se especifica um valor 0.alguma coisa, pode-se colocar 0.6 ou .6 direto */
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid pink;
+    border-radius: 5px;
+}
+
+.hero nav ul{
+    text-align: right;
+    margin: 20px 80px 0 0; /* ESSA MARGEM EMPURROU TODO O HEADER PARA BAIXO JUNTO. PARA RESOLVER, PODE-SE ADICIONAR UMA border-top NO ELEMENTO-PAI (.hero) */
+}
+
+.hero nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 7px; /* Distanciamento entre os botões */
+    border: 2px solid pink;
+    border-radius: 10px;
+}
+
+.hero nav a {
+    background-color: rgba(0,0,0,0.6); /* Se utilizou um pouco de transparência */
+    padding: 10px;
+    display: block;
+    border-radius: 10px; /* 5 ou 10px, das duas formas fica bom */
+    color: pink;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.hero nav a:hover {
+    background-color: rgb(252, 197, 222);
+    color: black;
+}
+
+.hero nav li:active{
+    border: 2px solid rgb(240, 153, 201); /* Coloquei li:active para mudar a cor da borda junto com o background-color do a:active */
+}
+.hero nav a:active {
+    background-color: rgb(240, 153, 201);
+    color: black;
+    font-size: 13px;
+}
+
+
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 1vw;
+}
+
+.gallery-items {
+    width: 300px;
+    height: 280px;
+    border: 10px solid white;
+    box-shadow: 5px 5px 5px 5px #0003;
+    flex-grow: 1;
+    filter: grayscale(100%);
+}
+
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-items:hover {
+    filter: none;
+}
+
+
+
+
+.header-section-content {
+    padding: 10px;
+    margin: 10px 10px 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 6px rgb(240, 153, 201);
+    background-color: rgb(70, 70, 70);
+    border-radius: 5px;
+}
+
+
+article p {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    text-shadow: 1px 1px 6px rgb(240, 153, 201);
+}
+
+
+
+
+.relax {
+    margin: 50px 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+.relax p {
+    color: rgb(252, 197, 222);
+}
+
+.relax a {
+    color: rgb(252, 197, 222);
+    text-decoration: none;
+}
+
+.relax a:hover, a:visited {
+    color: blueviolet;
+}
+
+.relax a:active {
+    color: rgb(226, 43, 186);
+}
+
+
+
+
+.footer-content {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: small;
+    color: rgb(252, 197, 222);
+    text-shadow: 2px 2px 7px rgb(252, 197, 222);
+}
